@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+/* ## Layout - Mobile: 375px - Desktop: 1440px */
+
+/* ## Colors */
+/* ### Primary */
+:root {
+  --primary-violet: hsl(257, 40%, 49%);
+  --primary-soft-magenta: hsl(300, 69%, 71%);
+
+  /* headings */
+  --font-poppins: "Poppins", sans-serif; /*  400, 600*/
+
+  /* body */
+  --font-opensans: "Open Sans", sans-serif; /* 400 */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--primary-violet);
+  background-image: url(./images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.wrapper {
+  max-width: 85%;
+  margin: 2.6rem auto;
+}
+.header {
+  padding-bottom: 90px;
+  /* background: orange; */
+}
+.header__logo {
+  max-height: 40px;
+  /* background: #000; */
+}
+
+img {
+  max-width: 100%;
+}
+.main {
+  padding-bottom: 80px;
+}
+
+.main__info {
+  padding-top: 58px;
+  color: #fff;
+  text-align: center;
+}
+
+.main__info h1 {
+  font-family: var(--font-poppins);
+  font-size: 28px;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+.main__info p {
+  font-size: 17px;
+  line-height: 1.8;
+  font-family: var(--font-opensans);
+  padding-bottom: 1.5rem;
+}
+
+.main__info button {
+  color: var(--primary-violet);
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  padding: 1.2rem 5rem;
+  background: #fff;
+  box-shadow: 1px 5px 10px hsla(257, 73%, 16%, 0.5);
+}
+
+.main__info button:hover {
+  background: var(--primary-soft-magenta);
+  color: #fff;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.footer .footer__link:nth-child(1) {
+  padding: 14px 18px;
+}
+.footer .footer__link {
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 50%;
+  /* background: #000; */
+  margin: 8px;
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.footer .footer__link:hover {
+  color: var(--primary-soft-magenta);
+  border-color: var(--primary-soft-magenta);
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-color: var(--primary-violet);
+    background-image: url(./images/bg-desktop.svg);
+  }
+
+  .header {
+    padding-bottom: 50px;
+  }
+  .main {
+    /* border: 6px solid green; */
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    /* flex-wrap: wrap; */
+    /* background: red; */
+  }
+
+  .main__info {
+    max-width: 460px;
+    text-align: start;
+  }
+  .main__info h1 {
+    font-size: 32px;
+  }
+  .main__info p {
+    font-size: 16px;
+  }
+  .main__info button {
+    padding: 1rem 3.5rem;
+  }
+  .footer {
+    justify-content: flex-end;
+  }
+}
