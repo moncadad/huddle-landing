@@ -42,7 +42,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - [Live Site URL](https://bejewelled-raindrop-b4121e.netlify.app/)
-- [Solution URL](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/huddle-landing-page-vv1R87apLM)
 
 ## My process
 
